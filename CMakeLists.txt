@@ -11,22 +11,22 @@ find_package(catkin REQUIRED COMPONENTS
   roslint
 )
 
-find_package(Eigen3 REQUIRED)
+#find_package(Eigen3 REQUIRED)
 
 catkin_package(
   INCLUDE_DIRS
     include
-    ${EIGEN3_INCLUDE_DIR}
+    #${EIGEN3_INCLUDE_DIR}
   LIBRARIES
     ${PROJECT_NAME}
   CATKIN_DEPENDS
     roscpp
   DEPENDS
-    EIGEN3
+    #EIGEN3
 )
 
 include_directories(SYSTEM
-  ${EIGEN3_INCLUDE_DIRS}
+  #${EIGEN3_INCLUDE_DIRS}
 )
 
 include_directories(
